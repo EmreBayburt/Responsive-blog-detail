@@ -4,8 +4,11 @@
     --header-yazi-renk: #fff;
     --body-renk: #f2f2f2;
     --body-yazi-renk: #000;
+    --yazi-altrenatif-renk: #fff;
     --button-yazi-renk: #434ccc;
+    --button-arka-plan-renk: #434ccc;
 }
+/* header start */
 header{
     background-color: var(--header-renk);
 }
@@ -19,14 +22,215 @@ header{
 .logo h4{
     color: var(--header-yazi-renk);
 }
+/* header end */
+/* main start */
+main{
+    background-color: var(--body-renk);
+}
+.opacity{
+    opacity: 0.5;
+}
+input::placeholder{
+    padding-left: 20px;
+    opacity: 0.5;
+}
+.cayla{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+/* heroRight */
+.categories{
+    margin-top: 40px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+    margin-bottom: 10px;
+}
+.card p{
+    opacity: 0.5;
+}
+.cizgi{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 14px;
+}
+.heroText p{
+    margin-bottom: 20px;
+}
+.border{
+    margin-top: 30px;
+    background-color: #ffdd78;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    transform-origin: left;
+    width: 96px;
+    height: 8px;
+}
+/* hero left start */
+/* cayla information start */
+.centerText{
+    margin-top: 40px;
+}
+.centerText p,h4{
+    margin-bottom: 20px;
+}
+.centerNav li{
+    list-style-type:disc;
+    color: #434ccc;
+    margin: 16px;
+}
+.caylaFlex{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+.caylaFlex a{
+    border: 1px solid #434ccc;
+    border-radius: 5px;
+    color: var(--button-yazi-renk);
+    width: 82px;
+    text-align: center;
+}
+.media{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+/* cayla information end */
+/* cayla card start */
+.caylaCard{
+    background-color: #fff;
+    height: 288px;
+    padding-left: 32px;
+    padding-top: 20px;
+    box-shadow: 2px 2px 18px #000;
+    border-radius: 10px;
+    margin-bottom: 74px;
+}
+.caylaItem{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.caylaItem p{
+    opacity: 0.5;
+}
+.caylaText p{
+    margin-top: 20px;
+    width: 26ch;
+    margin-left: 8px;
+    opacity: 0.5;
+}
+/* cayla card end */
 
-
-
-
-
+/* related start */
+.related{
+    margin-bottom: 74px;
+}
+.relatedCard{
+    background-color: #fff;
+    box-shadow: 2px 2px 18px;
+    border-radius: 10px;
+    height: 512px;
+    margin-bottom: 16px;
+}
+.relatedItem img{
+    padding: 32px 32px;
+}
+.relatedText{
+    padding-left: 32px;
+}
+.relatedText p{
+    opacity: 0.5;
+    margin-bottom: 16px;
+}
+.relatedText h4{
+    width: 20ch;
+}
+/* related end */
+/* comments start */
+.commentsCard{
+    display: flex;
+    gap: 8px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.commentsCard img{
+    width: 112px;
+    height: 112px;
+}
+.commentsText p{
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+.left{
+    padding-left: 30px;
+}
+/* comments end */
+/* leave start */
+.leave{
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.leaveItem{
+    margin-top: 30px;
+}
+.leaveItem input{
+    margin-bottom: 20px;
+}
+.leaveItem input{
+    width: 346px;
+    height: 40px;
+}
+.message input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.submit{
+    padding: 14px 56px;
+    border-radius: 5px;
+    background-color: var(--button-arka-plan-renk);
+    color: var(--yazi-altrenatif-renk);
+}
+/* leave end */
+/* recentPost start */
+.recentCard{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.recentCard p{
+    opacity: 0.5;
+}
+/* recent post end */
+/* tags grid */
+/* tags start */
+.tagsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.tagsGrid a{
+    color: var(--button-yazi-renk);
+    border: 1px solid #434ccc;
+    border-radius: 5px;
+    text-align: center;
+    height: 32px;
+    padding-top: 4px;
+}
+/* tags end */
 
 /* desktop media */
 @media(min-width:1170px){
+    /* header start */
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
     .logo{
         align-items: center;
     }
@@ -49,15 +253,152 @@ header{
         padding: 14px 56px;
         margin-left: 40px;
     }
+    /* header end */
+
+    /* main start */
+    .desktopFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* hero left start */
+    .heroLeftText{
+        margin-top: 30px;
+    }
+    .heroLeftText h2{
+        font-size: 72px;
+        line-height: 80px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .borderText p{
+        font-size: 20px;
+        line-height: 32px;
+        margin-left: 30px;
+    }
+    .caylaInformation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .media{
+        margin-top: 14px;
+    }
+    /* cayla card start */
+    .caylaCard{
+        background-color: #fff;
+        height: 206px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-left: 32px;
+        padding-top: 10px;
+    }
+    .caylaText{
+        margin-top: 10px;
+    }
+    .caylaCards h5{
+        width: 16ch;
+    }
+    .caylaDesktop{
+        margin-top: 6px;
+    }
+    /* cayla card end */
+    /* related start */
+    .relatedCards{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* related end */
+    /* leave start */
+    .leaveName{
+        display: flex;
+        justify-content: space-between;
+    }
+    .leaveName input{
+        width: 430px;
+    }
+    .message input{
+        height: 130px;
+    }
+    /* leave end */
+    /* heroRight clasinin burda ekstra kullandim yoksa 1170px' sayfaya sigmiyordu. */
+    .heroRight{
+        margin-right: 40px;
+    }
+    .heroItem input{
+        padding-left: 20px;
+    }
+    .heroItem input::placeholder{
+        padding-left: 0;
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    .recentCard p{
+        width: 13ch;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /* recent post end */
+    /* tags start */
+    .tagsGrid a{
+        padding: 4px 6px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /* tags end */
+
+    /* none bolumu */
+    .fircaMobile{
+        display: none;
+    }
+    .chatMobile{
+        display: none;
+    }
+    .caylaMobile{
+        display: none;
+    }
+    .relatedMobile{
+        display: none;
+    }
 }
 
 
 
 @media(max-width:1169px){
+
+    .heroRight{
+        margin-top: 20px;
+    }
+    .border{
+        width: 228px;
+    }
+    .borderText p{
+        width: 24ch;
+        margin-left: 24px;
+        font-size: 20px;
+        line-height: 32px;
+    }
     .nav{
         display: none;
     }
     .button{
         display: none;
     }
+    .fircaDesktop{
+        display: none;
+    }
+    .chatDesktop{
+        display: none;
+    }
+    .caylaDesktop{
+        display: none;
+    }
+    .relatedDesktop{
+        display: none;
+    }
+    
 }

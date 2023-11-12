@@ -43,6 +43,7 @@ p,a{
     font-family: 'DM Sans', sans-serif;
 }
 a{
+    color: #000;
     font-weight: 700;
     text-decoration: none;
 }
@@ -53,3 +54,38 @@ h1,h2,h3,h4,h5{
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
+
+
+
+/* <!-- categroies start -->
+<!-- <div class="categories">
+    <input type="text" placeholder="Search">
+    <div class="categoriesItem">
+        <a class="title" href="#">Categories</a>
+        <div class="card">
+            <a href="#">Principes</a>
+            <p>7</p>
+        </div>
+        <div class="cizgi"></div>
+        <div class="card">
+            <a href="#">Nullam</a>
+            <p>42</p>
+        </div>
+        <div class="cizgi"></div>
+        <div class="card">
+            <a href="#">Quaerendum</a>
+            <p>73</p>
+        </div>
+        <div class="cizgi"></div>
+        <div class="card">
+            <a href="#">Deterruisset</a>
+            <p>9</p>
+        </div>
+        <div class="cizgi"></div>
+        <div class="card">
+            <a href="#">Erroribus</a>
+            <p>20</p>
+        </div>
+        <div class="cizgi"></div>
+    </div> -->
+    
