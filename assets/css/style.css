@@ -3,6 +3,7 @@
     --header-renk: #434ccc;
     --header-yazi-renk: #fff;
     --body-renk: #f2f2f2;
+    --mea-section-color: #ffdd78;
     --body-yazi-renk: #000;
     --yazi-altrenatif-renk: #fff;
     --button-yazi-renk: #434ccc;
@@ -186,7 +187,7 @@ input::placeholder{
     height: 40px;
 }
 .message input{
-    width: 100%;
+    width: 346px;
     margin-bottom: 30px;
 }
 .submit{
@@ -209,6 +210,10 @@ input::placeholder{
 /* recent post end */
 /* tags grid */
 /* tags start */
+.tags{
+    margin-bottom: 80px;
+    margin-top: 46px;
+}
 .tagsGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -223,7 +228,82 @@ input::placeholder{
     padding-top: 4px;
 }
 /* tags end */
+/* mea start */
+.mea{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.meaText{
+    margin-bottom: 20px;
+}
+.meaText h5{
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+.meaItem{
+    margin-bottom: 16px;
+}
+.meaItem input{
+    width: 100%;
+    height: 46px;
+    margin-bottom: 26px;
+}
+.meaButton{
+    padding: 14px 46px;
+    border-radius: 5px;
+    color: var(--yazi-altrenatif-renk);
+    background-color: var(--button-arka-plan-renk);
+}
+.meaColor{
+    background-color: var(--mea-section-color);
+}
+/* mea end */
+/* main end */
 
+/* footer start */
+footer{
+    background-color: var(--body-renk);
+    padding-top: 60px;
+}
+.footerLogo p{
+    margin-bottom: 20px;
+}
+.footerMedia{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+.footerCards p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.footerCards{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 72px;
+}
+.footerCenter p{
+    opacity: 0.5;
+    width: 24ch;
+}
+.footerUst{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.footerUst img{
+    height: 48px;
+}
+.footerAlt{
+    display: flex;
+    gap: 10px;
+}
+.footerAlt img{
+    height: 48px;
+}
 /* desktop media */
 @media(min-width:1170px){
     /* header start */
@@ -258,6 +338,7 @@ input::placeholder{
     /* main start */
     .desktopFlex{
         display: flex;
+        gap: 10px;
         justify-content: space-between;
     }
     /* hero left start */
@@ -318,6 +399,7 @@ input::placeholder{
         width: 430px;
     }
     .message input{
+        width: 100%;
         height: 130px;
     }
     /* leave end */
@@ -327,6 +409,7 @@ input::placeholder{
     }
     .heroItem input{
         padding-left: 20px;
+        width: 100%;
     }
     .heroItem input::placeholder{
         padding-left: 0;
@@ -337,8 +420,11 @@ input::placeholder{
         gap: 100px;
         justify-content: space-between;
     }
+    .recentPost{
+        margin-top: 50px;
+    }
     .recentCard p{
-        width: 13ch;
+        width: 18ch;
         font-size: 16px;
         line-height: 24px;
     }
@@ -350,7 +436,47 @@ input::placeholder{
         line-height: 24px;
     }
     /* tags end */
-
+    /* mea start */
+    .meaCard{
+        display: flex;
+    }
+    .meaCard h3{
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .meaItem{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .meaItem input{
+        margin-top: 26px;
+        width: 370px;
+        height: 52px;
+    }
+    /* mea end */
+    /* main end */
+    /* footer start */
+    .footerItem{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerLogo p{
+        width: 25ch;
+    }
+    .footerCenter{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerEnd{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footerEnd p{
+        opacity: 0.5;
+    }
+    /* footer end */
     /* none bolumu */
     .fircaMobile{
         display: none;
